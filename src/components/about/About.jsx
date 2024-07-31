@@ -4,7 +4,7 @@ import aboutImage from "../../assets/images/about_img.png";
 export default function About() {
   return (
     <>
-      <div className="w-full bg-[#dae85e] px-7 sml:px-9 py-10 md:px-12 lg:px-20 lg:py-20 flex flex-col-reverse lg:flex-row overflow-hidden gap-10 lg:gap-0 justify-center items-center">
+      <div className="w-full bg-[#dae85e] px-7 sml:px-9 py-10 md:px-12 lg:px-20 lg:py-20 flex flex-col-reverse lg:flex-row overflow-hidden gap-10 lg:gap-0">
         <div className="w-full lg:w-[50%] flex justify-center items-center">
           <img
             className="w-[70%] lg:w-full h-auto object-contain"
