@@ -96,7 +96,7 @@ export default function Hero() {
                 variants={textVariants}
                 className="w-[50%] flex justify-center items-center"
               >
-                <a className="flex flex-row gap-1 justify-center items-center px-5 py-2 text-white rounded bg-darkAccent hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base">
+                <a className="flex flex-row gap-1 justify-center items-center px-5 py-[9px] text-white rounded bg-darkAccent hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base">
                   <span>
                     <MdFileDownload />
                   </span>
