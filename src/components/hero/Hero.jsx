@@ -54,7 +54,7 @@ export default function Hero() {
             <div className="w-full flex flex-row-reverse lg:flex-row justify-between">
               <motion.div
                 variants={textVariants}
-                className=" w-[30%] md:w-[25%] lgl:w-[30%] xl:w-[25%] uppercase text-xs sml:text-base md:text-lg lg:text-base xl:text-xl leading-none text-end lg:text-start"
+                className=" w-[30%] md:w-[25%] lgl:w-[30%] xl:w-[25%] text-xs sml:text-base md:text-lg lg:text-base xl:text-xl leading-none text-end lg:text-start uppercase"
               >
                 Welcome to my portfolio
               </motion.div>
@@ -72,7 +72,10 @@ export default function Hero() {
             </div>
             <div className="w-full flex">
               <p className="text-xl sml:text-2xl md:text-4xl lg:text-3xl xl:text-4xl leading-none">
-                An Expert Full Stack Developer.
+                An Expert{" "}
+                <span className="font-handFont ps-2 text-2xl sml:text-3xl md:text-5xl lg:text-4xl xl:text-5xl">
+                  Full Stack Developer.
+                </span>
               </p>
             </div>
             <div className="w-full flex flex-row-reverse">

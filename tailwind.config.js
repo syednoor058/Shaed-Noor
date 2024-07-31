@@ -19,6 +19,7 @@ export default {
       fontFamily: {
         bodyFont: ["Poppins", "sans-serif"],
         titleFont: ["Montserrat", "sans-serif"],
+        handFont: ["Satisfy", "sans-serif"],
       },
       colors: {
         darkBG: "#2a414d",

@@ -17,7 +17,10 @@ export default function About() {
             <div className="w-full flex flex-col-reverse gap-7 lg:gap-10">
               <div>
                 <p className="text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start">
-                  a Breif about myself
+                  a Breif about{" "}
+                  <span className="font-handFont ps-2 lowercase text-5xl sml:text-6xl md:text-7xl mdl:text-8xl l lg:text-7xl font-normal">
+                    _myself
+                  </span>
                 </p>
               </div>
               <div>
