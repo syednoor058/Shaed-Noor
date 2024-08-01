@@ -1,4 +1,5 @@
 import React from "react";
+import housePred from "../../assets/images/projects_images/house_price_pred.png";
 import ProjectCard from "./ProjectCard";
 
 export default function Project() {
@@ -39,14 +40,14 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 lgl:grid-cols-3 gap-5 justify-center items-center">
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 lgl:grid-cols-3 gap-5 justify-center items-center md:px-20 lg:px-0">
+          <ProjectCard coverImg={housePred} />
+          <ProjectCard coverImg={housePred} />
+          <ProjectCard coverImg={housePred} />
+          <ProjectCard coverImg={housePred} />
+          <ProjectCard coverImg={housePred} />
+          <ProjectCard coverImg={housePred} />
+          <ProjectCard coverImg={housePred} />
         </div>
       </div>
     </>
