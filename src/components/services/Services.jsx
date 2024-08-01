@@ -11,8 +11,8 @@ export default function Services() {
               Expertise
             </p>
           </div>
-          <div className="flex flex-row justify-between">
-            <div className="w-[60%] text-base">
+          <div className="flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row justify-between">
+            <div className="w-full lgl:w-[60%] text-sm md:text-base">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
               unde quasi porro beatae dolores dolorum explicabo debitis! Libero
               cupiditate magnam unde sequi? Nam ducimus accusamus quam sit, ipsa
@@ -28,14 +28,18 @@ export default function Services() {
               molestias culpa voluptatibus expedita nemo nulla amet accusantium
               possimus commodi unde. Blanditiis, dolorum modi.
             </div>
-            <p className="w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end">
-              The services I can provide
+            <p className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end">
+              The{" "}
+              <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-blue-300">
+                Services
+              </span>{" "}
+              I can provide
             </p>
           </div>
         </div>
         <div className="flex flex-row justify-between">
           <div className="w-full">
-            <div className="w-full h-full grid grid-cols-3 gap-5">
+            <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               <ServiceCard
                 icon=<FaAppStoreIos />
                 title="App Development"

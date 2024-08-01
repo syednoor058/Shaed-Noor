@@ -18,7 +18,7 @@ export default function About() {
               <div>
                 <p className="text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start">
                   a Breif about{" "}
-                  <span className="font-handFont ps-2 lowercase text-5xl sml:text-6xl md:text-7xl mdl:text-8xl l lg:text-7xl font-normal">
+                  <span className="font-handFont ps-2 lowercase text-5xl sml:text-7xl md:text-8xl font-normal text-red-400">
                     _myself
                   </span>
                 </p>
