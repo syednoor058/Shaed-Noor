@@ -4,7 +4,7 @@ import { FaStar } from "react-icons/fa6";
 export default function TestimonialCard(props) {
   return (
     <div>
-      <div className="w-[300px] h-auto md:w-[450px] lg:w-[500px] mx-5 my-3 p-5 rounded flex flex-col gap-2 justify-center bg-gray-100 overflow-hidden">
+      <div className="w-[380px] h-auto md:w-[450px] lg:w-[500px] mx-5 my-3 p-5 rounded flex flex-col gap-2 justify-center bg-gray-100 overflow-hidden">
         <div className="w-full flex flex-row justify-between">
           <div className="w-[75%] flex flex-row justify-between">
             <div className="w-[25%] h-auto flex justify-center items-center">

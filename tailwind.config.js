@@ -31,6 +31,10 @@ export default {
         darkText: "#636e6e",
         lightText: "#f7f6f7",
       },
+      boxShadow: {
+        shadow1: "0px -12.5px 0 0 rgb(20 22 24)",
+        shadow2: "0px -8px 0 0 rgb(20 22 24)",
+      }
     },
   },
   plugins: [],

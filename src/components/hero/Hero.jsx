@@ -7,8 +7,7 @@ import {
   FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import { IoCallSharp } from "react-icons/io5";
-import { MdFileDownload } from "react-icons/md";
+import { MdCall, MdFileDownload } from "react-icons/md";
 import heroImg from "../../assets/images/hero_image.png";
 
 export default function Hero() {
@@ -73,7 +72,7 @@ export default function Hero() {
             <div className="w-full flex">
               <p className="text-xl sml:text-2xl md:text-4xl lg:text-3xl xl:text-4xl leading-none">
                 An Expert{" "}
-                <span className="font-handFont ps-2 text-2xl sml:text-3xl md:text-5xl lg:text-4xl xl:text-5xl">
+                <span className="font-handFont text-2xl sml:text-3xl md:text-5xl lg:text-4xl xl:text-5xl">
                   Full Stack Developer.
                 </span>
               </p>
@@ -109,7 +108,7 @@ export default function Hero() {
               >
                 <a className="flex flex-row gap-1 justify-center items-center px-5 py-2 text-darkAccent rounded border border-darkAccent hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base">
                   <span className="text-lg">
-                    <IoCallSharp />
+                    <MdCall />
                   </span>
                   Contact Me
                 </a>

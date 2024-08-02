@@ -13,7 +13,7 @@ import TestimonialCard from "./TestimonialCard";
 
 export default function Testimonial() {
   return (
-    <div className="w-full flex flex-col gap-10 py-10 lg:py-20">
+    <div className="w-full flex flex-col py-10 lg:py-20 overflow-hidden gap-7 lg:gap-10">
       <div className="w-full flex flex-col gap-10 px-7 sml:px-9 md:px-12 lg:px-20">
         <div className="w-full flex flex-col gap-10">
           <div className="uppercase font-titleFont text-xs md:text-base text-start">
