@@ -30,6 +30,11 @@ export default {
         lightTitle: "#ffe4ea",
         darkText: "#636e6e",
         lightText: "#f7f6f7",
+        darkBG1: "#00171F",
+        primaryColor1: "#35A7FF",
+        accentColor1: "#FF3366",
+        titleColor1: "#F6F7F8",
+        textColo1: "#E3DFFF",
       },
       boxShadow: {
         shadow1: "0px -12.5px 0 0 rgb(20 22 24)",
