@@ -41,7 +41,7 @@ export default function Hero() {
   };
 
   return (
-    <>
+    <div id="home">
       <div className="w-full min-h-screen xl:h-screen flex bg-lightBG overflow-hidden relative justify-center items-center">
         <div className="px-7 sml:px-9 py-20 md:px-12 lg:px-20 flex flex-col gap-10 xl:gap-0 lg:flex-row z-[3]">
           <motion.div
@@ -195,6 +195,6 @@ export default function Hero() {
           </motion.p>
         </motion.div>
       </div>
-    </>
+    </div>
   );
 }

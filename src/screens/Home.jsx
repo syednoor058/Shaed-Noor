@@ -5,7 +5,6 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
-// import { CgClose } from "react-icons/cg";
 
 import Project from "../components/projects/Project";
 import Services from "../components/services/Services";

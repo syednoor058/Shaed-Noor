@@ -11,7 +11,7 @@ import { MdCall } from "react-icons/md";
 
 export default function Contact() {
   return (
-    <>
+    <div id="contact">
       <div className="w-full py-10 lg:py-20 bg-[#141618] flex flex-col gap-7 lg:gap-10 overflow-hidden">
         <div className="w-full px-7 sml:px-9  md:px-12 lg:px-20 overflow-hidden flex flex-col gap-7 lg:gap-10">
           <div className="">
@@ -178,6 +178,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -3,7 +3,7 @@ import ServiceCard from "./ServiceCard";
 
 export default function Services() {
   return (
-    <>
+    <div id="services">
       <div className="w-full px-7 sml:px-9 py-10 md:px-12 lg:px-20 lg:py-20 overflow-hidden flex flex-col gap-7 lg:gap-10">
         <div className="w-full flex flex-col gap-7 lg:gap-10">
           <div>
@@ -74,6 +74,6 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

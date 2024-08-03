@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Project() {
   return (
-    <>
+    <div id="projects">
       <div className="bg-cyan-400 w-full px-7 sml:px-9 py-10 md:px-12 lg:px-20 lg:py-20 overflow-hidden flex flex-col gap-7 lg:gap-10">
         <div>
           <div className="w-full flex flex-col gap-7 lg:gap-10">
@@ -50,6 +50,6 @@ export default function Project() {
           <ProjectCard coverImg={housePred} />
         </div>
       </div>
-    </>
+    </div>
   );
 }
