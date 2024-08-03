@@ -5,21 +5,25 @@ import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
 import Hero from "../components/hero/Hero";
 import Navbar from "../components/navbar/Navbar";
+// import { CgClose } from "react-icons/cg";
+
 import Project from "../components/projects/Project";
 import Services from "../components/services/Services";
 import Testimonial from "../components/testimonial/Testimonial";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Project />
-      <Testimonial />
-      <Contact />
-      <Footer />
+    <div className="">
+      <div>
+        <Navbar />
+        <Hero />
+        <About />
+        <Services />
+        <Project />
+        <Testimonial />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }
