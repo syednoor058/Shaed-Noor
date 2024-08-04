@@ -124,11 +124,11 @@ export default function Contact() {
           </div>
         </div>
         <div className="full flex justify-center items-center px-2 sml:px-5 md:px-7 lg:px-0 pt-7 lg:pt-10">
-          <div className="w-full lg:w-[90%] bg-red-500 text-white rounded-xl px-0 mdl:px-5 lg:px-10">
+          <div className="w-full lg:w-[90%] bg-gradient-to-tr from-primaryColor1 to-accentColor1 text-white rounded-xl px-0 mdl:px-5 lg:px-10">
             <div className="grid grid-cols-3">
               <div className="p-2 md:p-4 flex flex-col gap-1 items-center">
                 <div className="flex p-2 md:p-3 rounded-[50%] mt-[-37px] md:mt-[-56px] bg-[#141618] relative">
-                  <div className="p-2 md:p-4 text-xl md:text-3xl rounded-[50%]  bg-red-500 text-white">
+                  <div className="p-2 md:p-4 text-xl md:text-3xl rounded-[50%]  bg-gradient-to-tr from-primaryColor1 to-accentColor1 text-white">
                     <IoLocationSharp />
                   </div>
                   <span className="w-3.5 h-3.5 md:w-7 md:h-7 absolute top-7 md:top-10 -left-[10px] md:-left-[24.5px] z-[100] rounded-tr-[24px] shadow-shadow2 md:shadow-shadow1"></span>
@@ -143,7 +143,7 @@ export default function Contact() {
               </div>
               <div className="p-2 md:p-4 flex flex-col gap-1 items-center">
                 <div className="flex p-2 md:p-3 rounded-[50%] mt-[-37px] md:mt-[-56px] bg-[#141618] relative">
-                  <div className="p-2 md:p-4 text-xl md:text-3xl rounded-[50%]  bg-red-500 text-white">
+                  <div className="p-2 md:p-4 text-xl md:text-3xl rounded-[50%]  bg-gradient-to-tr from-primaryColor1 to-accentColor1 text-white">
                     <MdCall />
                   </div>
                   <span className="w-3.5 h-3.5 md:w-7 md:h-7 absolute top-7 md:top-10 -left-[10px] md:-left-[24.5px] z-[100] rounded-tr-[24px] shadow-shadow2 md:shadow-shadow1"></span>
@@ -161,7 +161,7 @@ export default function Contact() {
               </div>
               <div className="p-2 md:p-4 flex flex-col gap-1 items-center">
                 <div className="flex p-2 md:p-3 rounded-[50%] mt-[-37px] md:mt-[-56px] bg-[#141618] relative">
-                  <div className="p-2 md:p-4 text-xl md:text-3xl rounded-[50%]  bg-red-500 text-white">
+                  <div className="p-2 md:p-4 text-xl md:text-3xl rounded-[50%] bg-gradient-to-tr from-primaryColor1 to-accentColor1 text-white">
                     <IoMdMail />
                   </div>
                   <span className="w-3.5 h-3.5 md:w-7 md:h-7 absolute top-7 md:top-10 -left-[10px] md:-left-[24.5px] z-[100] rounded-tr-[24px] shadow-shadow2 md:shadow-shadow1"></span>

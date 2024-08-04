@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="w-full flex z-[999] justify-end items-center fixed">
         <div className="flex p-3 md:p-5 rounded">
           <div
-            className="p-2 bg-darkBG text-lightBG rounded text-xl md:text-2xl lg:text-3xl cursor-pointer shadow-black shadow-md"
+            className="p-2 bg-darkBG text-titleColor1 rounded text-xl md:text-2xl lg:text-3xl cursor-pointer shadow-black shadow-md"
             onClick={handleToggle}
           >
             <RiMenu3Line />
@@ -42,7 +42,7 @@ export default function Navbar() {
             <div className="text-2xl cursor-pointer" onClick={handleToggle}>
               <CgClose />
             </div>
-            <div className="h-full flex flex-col justify-center gap-7 lg:gap-10 uppercase text-xl text-gray-200">
+            <div className="h-full flex flex-col justify-center gap-7 lg:gap-10 uppercase text-xl text-titleColor1">
               <Link
                 to="home"
                 activeClass="active"

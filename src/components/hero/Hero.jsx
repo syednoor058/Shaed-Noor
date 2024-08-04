@@ -106,7 +106,7 @@ export default function Hero() {
                 <Cursor
                   cursorBlinking="false"
                   cursorStyle="|"
-                  cursorColor="#ff014f"
+                  cursorColor="#6D72C3"
                 />
               </p>
             </div>
@@ -150,11 +150,7 @@ export default function Hero() {
           </motion.div>
           <div className="w-full lg:w-[40%] xl:w-[45%] flex flex-col xl:flex-row justify-center items-center">
             <div className="w-[75%] md:w-[60%] lg:w-full xl:w-[85%] flex justify-center items-center">
-              <img
-                className="w-[90%] h-auto object-contain"
-                src={heroImg}
-                alt=""
-              />
+              <img src={heroImg} alt="" />
             </div>
             <motion.div
               variants={iconVariants}
