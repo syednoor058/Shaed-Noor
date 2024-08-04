@@ -36,13 +36,19 @@ export default {
         accentColor1: "#FF3366",
         titleColor1: "#F6F7F8",
         textColo1: "#E3DFFF",
-
+        
 
         darkBG2: "#F6E8EA",
         primaryColor2: "#6D72C3",
         accentColor2: "#FF3366",
         titleColor2: "#22181C",
         textColo2: "#312F2F",
+
+        darkBG3: "#D3D4EE",
+        primaryColor3: "#00171F",
+        accentColor3: "#FF3366",
+        titleColor3: "#22181C",
+        textColo3: "#312F2F",
       },
       boxShadow: {
         shadow1: "0px -12.5px 0 0 rgb(20 22 24)",

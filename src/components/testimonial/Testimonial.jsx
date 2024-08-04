@@ -15,15 +15,15 @@ export default function Testimonial() {
   return (
     <div
       id="testimonial"
-      className="w-full flex flex-col py-10 lg:py-20 overflow-hidden gap-7 lg:gap-10"
+      className="w-full flex flex-col py-10 lg:py-20 overflow-hidden gap-7 lg:gap-10 bg-darkBG2"
     >
       <div className="w-full flex flex-col gap-10 px-7 sml:px-9 md:px-12 lg:px-20">
         <div className="w-full flex flex-col gap-10">
-          <div className="uppercase font-titleFont text-xs md:text-base text-start">
+          <div className="uppercase font-titleFont text-xs md:text-base text-start text-accentColor1">
             Testimonial
           </div>
           <div className="w-full flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row justify-between">
-            <p className="w-full lgl:w-[60%] text-sm md:text-base">
+            <p className="w-full lgl:w-[60%] text-sm md:text-base text-textColo2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
               illo minus voluptatibus quisquam ipsam consequuntur asperiores,
               odio, dolorem modi eveniet iure reiciendis possimus cupiditate
@@ -37,10 +37,10 @@ export default function Testimonial() {
               Ipsum animi ratione corporis molestiae nobis saepe similique quas,
               nam error impedit distinctio, excepturi minima. Nobis.
             </p>
-            <div className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end">
+            <div className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end text-titleColor2">
               <p>
                 What{" "}
-                <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-red-400">
+                <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-primaryColor1">
                   Clients
                 </span>{" "}
                 say about me
@@ -93,14 +93,14 @@ export default function Testimonial() {
           />
         </Marquee>
         <div className="w-full flex flex-col gap-7">
-          <div className="text-2xl font-titleFont uppercase text-center font-bold">
+          <div className="text-2xl font-titleFont uppercase text-center font-bold text-titleColor2">
             The{" "}
-            <span className="font-handFont ps-2 normal-case text-5xl sml:text-6xl md:text-7xl mdl:text-8xl l lg:text-7xl font-normal text-blue-400">
+            <span className="font-handFont ps-2 normal-case text-5xl sml:text-6xl md:text-7xl mdl:text-8xl l lg:text-7xl font-normal text-accentColor1">
               Brands
             </span>{" "}
             I have worked with
           </div>
-          <div className="text-center text-sm md:text-base">
+          <div className="text-center text-sm md:text-base text-textColo2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus at
             reprehenderit provident eveniet quisquam recusandae enim aut omnis
             esse consequatur nihil voluptatum, nulla reiciendis, adipisci nemo
@@ -117,6 +117,7 @@ export default function Testimonial() {
           direction="right"
           className="hover:cursor-pointer"
           gradient={true}
+          gradientColor="#F6E8EA"
           gradientWidth={50}
         >
           <img src={sweetCake} className="w-[100px] md:w-[150px] h-auto mx-5" />

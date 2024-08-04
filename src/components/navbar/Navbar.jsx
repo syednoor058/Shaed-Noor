@@ -1,11 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
-import { CgClose } from "react-icons/cg";
-import { RiMenu3Line } from "react-icons/ri";
-import { Link } from "react-scroll";
-// import logo from "../../assets/images/title_logo.png";
 import { AiFillProject } from "react-icons/ai";
+import { CgClose } from "react-icons/cg";
 import { FaHome } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
 import {
@@ -13,6 +10,9 @@ import {
   MdPermContactCalendar,
   MdRateReview,
 } from "react-icons/md";
+import { RiMenu3Line } from "react-icons/ri";
+import { Link } from "react-scroll";
+import logo from "../../assets/images/title_logo.png";
 
 export default function Navbar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -21,10 +21,13 @@ export default function Navbar() {
   };
   return (
     <div className="">
+      <div className="px-7 sml:px-9  md:px-12 lg:px-20 py-3 absolute z-[25]">
+        <img src={logo} className="h-12 md:h-14 mdl:h-16 w-auto" alt="" />
+      </div>
       <div className="w-full flex z-[999] justify-end items-center fixed">
         <div className="flex p-3 md:p-5 rounded">
           <div
-            className="p-2 bg-darkBG text-titleColor1 rounded text-xl md:text-2xl lg:text-3xl cursor-pointer shadow-black shadow-md"
+            className="p-2 bg-darkBG text-titleColor1 rounded text-xl sml:text-2xl lg:text-3xl cursor-pointer shadow-black shadow-md"
             onClick={handleToggle}
           >
             <RiMenu3Line />
@@ -37,10 +40,10 @@ export default function Navbar() {
             initial={{ x: "-100%" }}
             animate={{ x: 0, transition: { duration: 0.5 } }}
             exit={{ x: "-100%", transition: { duration: 0.5 } }}
-            className="w-[60%] md:w-[50%] lg:w-[30%] h-screen flex flex-col z-[1000] px-7 sml:px-9 md:px-12 lg:px-20 py-5 fixed bg-darkBG bg-opacity-[0.95] backdrop-blur-sm text-gray-200"
+            className="w-[60%] md:w-[50%] lg:w-[30%] h-screen flex flex-col z-[1000] px-7 sml:px-9 md:px-12 lg:px-20 py-10 fixed bg-darkBG bg-opacity-[0.95] backdrop-blur-sm text-gray-200"
           >
-            <div className="text-2xl cursor-pointer" onClick={handleToggle}>
-              <CgClose />
+            <div className="flex text-2xl" onClick={handleToggle}>
+              <CgClose className="hover:text-accentColor1 duration-300 cursor-pointer" />
             </div>
             <div className="h-full flex flex-col justify-center gap-7 lg:gap-10 uppercase text-xl text-titleColor1">
               <Link

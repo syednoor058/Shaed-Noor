@@ -13,7 +13,7 @@ import Testimonial from "../components/testimonial/Testimonial";
 export default function Home() {
   return (
     <div className="">
-      <div>
+      <div className="bg-darkBG1">
         <Navbar />
         <Hero />
         <About />
