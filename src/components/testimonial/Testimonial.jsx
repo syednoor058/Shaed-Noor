@@ -40,7 +40,7 @@ export default function Testimonial() {
             <div className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end text-titleColor2">
               <p>
                 What{" "}
-                <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-primaryColor1">
+                <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-[#8447FF]">
                   Clients
                 </span>{" "}
                 say about me

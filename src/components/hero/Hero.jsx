@@ -4,9 +4,9 @@ import {
   FaChevronCircleDown,
   FaFacebookF,
   FaGithub,
-  FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
 import { MdCall, MdFileDownload } from "react-icons/md";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import heroImg from "../../assets/images/hero_image.png";
@@ -148,7 +148,7 @@ export default function Hero() {
               </motion.div>
             </div>
           </motion.div>
-          <div className="w-full lg:w-[40%] xl:w-[45%] flex flex-col xl:flex-row justify-center items-center">
+          <div className="w-full lg:w-[40%] xl:w-[45%] flex flex-col xl:flex-row justify-center items-center gap-10 lg:gap-5">
             <div className="w-[75%] md:w-[60%] lg:w-full xl:w-[85%] flex justify-center items-center">
               <img src={heroImg} alt="" />
             </div>
@@ -160,25 +160,25 @@ export default function Hero() {
             >
               <motion.div
                 variants={iconVariants}
-                className="p-2 text-2xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer"
+                className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
               >
                 <FaFacebookF />
               </motion.div>
               <motion.div
                 variants={iconVariants}
-                className="p-2 text-2xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer"
+                className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
               >
                 <FaLinkedin />
               </motion.div>
               <motion.div
                 variants={iconVariants}
-                className="p-2 text-2xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer"
+                className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
               >
-                <FaInstagramSquare />
+                <GrInstagram />
               </motion.div>
               <motion.div
                 variants={iconVariants}
-                className="p-2 text-2xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer"
+                className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
               >
                 <FaGithub />
               </motion.div>

@@ -1,10 +1,6 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagramSquare,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
 import { IoIosSend, IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdCall } from "react-icons/md";
@@ -15,7 +11,7 @@ export default function Contact() {
       <div className="w-full py-10 lg:py-20 bg-darkBG1 flex flex-col gap-7 lg:gap-10 overflow-hidden">
         <div className="w-full px-7 sml:px-9  md:px-12 lg:px-20 overflow-hidden flex flex-col gap-7 lg:gap-10">
           <div className="">
-            <p className="uppercase font-titleFont text-xs md:text-base text-end text-primaryColor1">
+            <p className="uppercase font-titleFont text-xs md:text-base text-end text-accentColor1">
               Contact
             </p>
           </div>
@@ -41,17 +37,17 @@ export default function Contact() {
                     <div className="uppercase text-lg text-textColo1">
                       Find Me in
                     </div>
-                    <div className="flex flex-row gap-3">
-                      <div className="p-2 rounded bg-gray-200">
+                    <div className="flex flex-row gap-10 text-2xl">
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
                         <FaFacebookF />
                       </div>
-                      <div className="p-2 rounded bg-gray-200">
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
                         <FaGithub />
                       </div>
-                      <div className="p-2 rounded bg-gray-200">
-                        <FaInstagramSquare />
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
+                        <GrInstagram />
                       </div>
-                      <div className="p-2 rounded bg-gray-200">
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
                         <FaLinkedin />
                       </div>
                     </div>
@@ -110,8 +106,8 @@ export default function Contact() {
                       rows="5"
                     ></textarea>
                   </div>
-                  <div className="w-full cursor-pointer bg-accentColor1 rounded py-2 md:py-3 px-3 flex justify-center items-center text-textColo1">
-                    <button className="flex justify-center items-center text-sm md:text-base">
+                  <div className="w-full cursor-pointer bg-accentColor1 rounded py-2 md:py-3 px-3 flex justify-center items-center text-textColo1 group">
+                    <button className="flex justify-center items-center text-sm md:text-base group-hover:scale-[1.1] duration-300">
                       <span className="text-xl pe-2">
                         <IoIosSend />
                       </span>

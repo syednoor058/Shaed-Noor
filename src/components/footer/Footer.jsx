@@ -1,9 +1,5 @@
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagramSquare,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
 import logo from "../../assets/images/title_logo.png";
 
 export default function Footer() {
@@ -25,17 +21,17 @@ export default function Footer() {
                 <div className="uppercase text-sm md:text-base lg:text-lg text-textColo1">
                   Find Me in
                 </div>
-                <div className="flex flex-row gap-3">
-                  <div className="p-2 rounded bg-primaryColor1 text-textColo1">
+                <div className="flex flex-row gap-7">
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
                     <FaFacebookF />
                   </div>
-                  <div className="p-2 rounded bg-primaryColor1 text-textColo1">
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
                     <FaGithub />
                   </div>
-                  <div className="p-2 rounded bg-primaryColor1 text-textColo1">
-                    <FaInstagramSquare />
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
+                    <GrInstagram />
                   </div>
-                  <div className="p-2 rounded bg-primaryColor1 text-textColo1">
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
                     <FaLinkedin />
                   </div>
                 </div>
@@ -43,44 +39,140 @@ export default function Footer() {
             </div>
             <div className="w-full flex justify-center text-xs md:text-sm lg:text-base">
               <div className="flex flex-col gap-3 text-textColo1">
-                <div className="uppercase font-titleFont text-primaryColor1">
+                <div className="uppercase font-titleFont text-accentColor1">
                   Quick links
                 </div>
-                <div>Personal Details</div>
-                <div>Portfolio</div>
-                <div>Services</div>
-                <div>Blog</div>
-                <div>Contact</div>
+
+                <ul
+                  className="flex flex-col gap-3 py-1 overflow-hidden"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Personal Details
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Portfolio
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Services
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Blog
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Contact
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="w-full flex lg:justify-center text-xs md:text-sm lg:text-base">
               <div className="flex flex-col gap-3 text-textColo1">
-                <div className="uppercase font-titleFont text-primaryColor1">
+                <div className="uppercase font-titleFont text-accentColor1">
                   Resources
                 </div>
-                <div>Authentication</div>
-                <div>System Status</div>
-                <div>Terms of Services</div>
-                <div>Pricing</div>
-                <div>Overright</div>
+
+                <ul
+                  className="flex flex-col gap-3 py-1 overflow-hidden"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Authentication
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      System Status
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Terms of Services
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Pricing
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Over Righgt
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
             <div className="w-full flex justify-center text-xs md:text-sm lg:text-base">
               <div className="flex flex-col gap-3 text-textColo1">
-                <div className="uppercase font-titleFont text-primaryColor1">
+                <div className="uppercase font-titleFont text-accentColor1">
                   Developers
                 </div>
-                <div>Documentation</div>
-                <div>API References</div>
-                <div>Copyright</div>
-                <div>Project Experience</div>
-                <div>Work Experience</div>
+
+                <ul
+                  className="flex flex-col gap-3 py-1 overflow-hidden"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Documentation
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Authentication
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      API References
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Project Experience
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                  <li>
+                    <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
+                      Work Experience
+                      <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
+                    </span>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="w-full text-xs lg:text-sm text-center text-gray-400 pt-10 pb-5 bg-black">
+      <div className="w-full text-xs lg:text-sm text-center text-gray-400 pt-10 pb-3 bg-black">
         © 2024. All rights reserved by Syed Shaeduzzaman Noor
       </div>
     </>

@@ -9,7 +9,7 @@ export default function Project() {
         <div>
           <div className="w-full flex flex-col gap-7 lg:gap-10">
             <div>
-              <p className="uppercase font-titleFont text-xs md:text-base text-end text-darkAccent">
+              <p className="uppercase font-titleFont text-xs md:text-base text-end text-accentColor1">
                 Portfolio
               </p>
             </div>
@@ -32,7 +32,7 @@ export default function Project() {
               </div>
               <p className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start text-titleColor2">
                 The{" "}
-                <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-accentColor1">
+                <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-[#07BEB8]">
                   Projects
                 </span>{" "}
                 I have worked on

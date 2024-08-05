@@ -24,7 +24,7 @@ export default function About() {
                 </p>
               </div>
               <div>
-                <p className="uppercase font-titleFont text-xs md:text-base text-end text-primaryColor2">
+                <p className="uppercase font-titleFont text-xs md:text-base text-end text-accentColor1">
                   About
                 </p>
               </div>

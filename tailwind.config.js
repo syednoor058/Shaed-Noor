@@ -23,15 +23,8 @@ export default {
       },
       colors: {
         darkBG: "#2a414d",
-        lightBG: "#fff0d4",
-        darkAccent: "#365b7c",
-        lightAccent: "#f2e85e",
-        darkTitle: "#0f393d",
-        lightTitle: "#ffe4ea",
-        darkText: "#636e6e",
-        lightText: "#f7f6f7",
+
         darkBG1: "#00171F",
-        // primaryColor1: "#35A7FF",
         primaryColor1: "#6D72C3",
         accentColor1: "#FF3366",
         titleColor1: "#F6F7F8",
