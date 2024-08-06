@@ -13,29 +13,24 @@ export default function Project() {
                 Portfolio
               </p>
             </div>
-            <div className="flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row-reverse justify-between">
+            <div className="flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row-reverse justify-between items-center">
               <div className="w-full lgl:w-[60%] text-sm md:text-base text-end text-textColo2">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-                unde quasi porro beatae dolores dolorum explicabo debitis!
-                Libero cupiditate magnam unde sequi? Nam ducimus accusamus quam
-                sit, ipsa delectus quibusdam vel quos, tempore modi accusantium
-                voluptate maxime, consectetur quia autem magni. Aliquam maxime
-                magnam corrupti in unde fugit aut a ipsum ullam, ab ducimus sint
-                assumenda officiis exercitationem modi similique, quae sit. Hic
-                accusamus quis possimus itaque autem libero reprehenderit velit
-                est amet, sit ab maiores voluptatibus illo laboriosam aliquid ad
-                quibusdam. A fugiat sapiente quia facere, unde exercitationem
-                blanditiis nam ullam voluptatibus? Adipisci praesentium, est
-                omnis harum dicta numquam tempore ad quam corporis assumenda
-                neque molestias culpa voluptatibus expedita nemo nulla amet
-                accusantium possimus commodi unde. Blanditiis, dolorum modi.
+                Welcome to my project portfolio, where creativity meets
+                functionality. Here, you will find a curated selection of my
+                most significant works, showcasing my expertise in front-end and
+                back-end development with UI/UX design, Machine Learning,
+                software manual or automation testing, and more. Each project
+                reflects my commitment to quality, innovation, and meticulous
+                attention to detail. From dynamic websites and testing apps to
+                data-driven machine learning models, these projects demonstrate
+                my ability to tackle diverse challenges and deliver exceptional
+                results. Dive in to explore the breadth and depth of my work.
               </div>
-              <p className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start text-titleColor2">
-                The{" "}
-                <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-[#07BEB8]">
-                  Projects
-                </span>{" "}
-                I have worked on
+              <p className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start text-titleColor2 leading-none">
+                My Development{" "}
+                <span className="font-handFont ps-2 lowercase text-5xl sml:text-7xl md:text-8xl font-normal text-[#07BEB8]">
+                  _journey
+                </span>
               </p>
             </div>
           </div>

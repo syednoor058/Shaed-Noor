@@ -4,34 +4,37 @@ import logo from "../../assets/images/title_logo.png";
 
 export default function Footer() {
   return (
-    <>
-      <div className="w-full bg-black pt-10 px-7 sml:px-9 md:px-12 lg:px-20 overflow-hidden flex flex-col gap-7 lg:gap-10 rounded-t-2xl">
+    <div className="w-full flex flex-col gap-7 lg:gap-10 bg-black">
+      <div className="w-full bg-black pt-6 px-7 sml:px-9 md:px-12 lg:px-20 overflow-hidden flex flex-col gap-7 lg:gap-10 rounded-t-2xl">
         <div className="w-full flex flex-col gap-7 lg:gap-10 items-center">
           <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-10 items-end">
-            <div className="w-full flex flex-col gap-3 items-center">
-              <img src={logo} className="w-[80%] h-auto" alt="" />
+            <div className="w-full flex flex-col gap-5">
+              <div>
+                <img src={logo} className="h-[100px] object-contain" alt="" />
+              </div>
               <div>
                 <p className="text-textColo1 text-xs md:text-sm">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est
-                  nemo harum voluptatum ea necessitatibus tempore omnis unde
-                  voluptas, amet ex.
+                  Thank you for visiting my portfolio. Stay connected and follow
+                  my journey as I continue to create, innovate, and grow. I look
+                  forward to staying in touch and sharing more of my work with
+                  you. Your support means the world to me.
                 </p>
               </div>
-              <div className="w-full flex flex-col gap-3">
+              <div className="w-full flex flex-col gap-5">
                 <div className="uppercase text-sm md:text-base lg:text-lg text-textColo1">
                   Find Me in
                 </div>
-                <div className="flex flex-row gap-7">
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
+                <div className="flex flex-row gap-7 mdl:gap-10">
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
                     <FaFacebookF />
                   </div>
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
                     <FaGithub />
                   </div>
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
                     <GrInstagram />
                   </div>
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl">
+                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
                     <FaLinkedin />
                   </div>
                 </div>
@@ -172,9 +175,12 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="w-full text-xs lg:text-sm text-center text-gray-400 pt-10 pb-3 bg-black">
-        © 2024. All rights reserved by Syed Shaeduzzaman Noor
+      <div className="w-full px-7 sml:px-9 md:px-12 lg:px-20 flex flex-col gap-5">
+        <div className="w-full h-[1px] bg-gradient-to-r from-primaryColor1 to-accentColor1 opacity-50"></div>
+        <div className="w-full text-xs lg:text-sm text-center text-gray-400 pb-7 bg-black">
+          © 2024. All rights reserved by Syed Shaeduzzaman Noor
+        </div>
       </div>
-    </>
+    </div>
   );
 }

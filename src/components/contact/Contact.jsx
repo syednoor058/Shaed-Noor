@@ -18,36 +18,36 @@ export default function Contact() {
           <div className="w-full flex flex-col xl:flex-row gap-7 lg:gap-10 items-center">
             <div className="w-full xl:w-[60%] flex flex-col gap-7">
               <div className="w-full text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-titleColor1">
-                Let&apos;s have a{" "}
+                Let&apos;s have a{"  "}
                 <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-[#dae85e]">
-                  Conversation
+                  _conversation
                 </span>
               </div>
               <div className="w-full flex flex-col-reverse md:flex-row gap-7">
                 <div className="w-full h-[240px] md:h-auto md:w-[50%] bg-primaryColor1"></div>
                 <div className="w-full md:w-[50%] flex flex-col gap-5">
                   <div className="text-sm md:text-base text-textColo1 text-end">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolor veniam quos quae nemo adipisci officiis. Minima quod
-                    voluptatum dolore quibusdam laudantium facere excepturi
-                    laboriosam, nobis nulla rerum adipisci qui eum harum unde,
-                    odio tenetur aperiam ipsam pariatur officiis illo! Eos?
+                    I would love to hear from you! Whether you have a project in
+                    mind, need more information about my services, or just want
+                    to connect, feel free to reach out. I'm always excited to
+                    explore new opportunities and discuss how I can help bring
+                    your vision to life.
                   </div>
-                  <div className="flex flex-col gap-3">
+                  <div className="flex flex-col gap-5">
                     <div className="uppercase text-lg text-textColo1">
                       Find Me in
                     </div>
-                    <div className="flex flex-row gap-10 text-2xl">
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
+                    <div className="flex flex-row gap-7 mdl:gap-10 text-2xl">
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
                         <FaFacebookF />
                       </div>
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
                         <FaGithub />
                       </div>
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
                         <GrInstagram />
                       </div>
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 duration-300">
+                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
                         <FaLinkedin />
                       </div>
                     </div>
@@ -58,7 +58,7 @@ export default function Contact() {
             </div>
             <div className="w-full md:w-[80%] mdl:w-[70%] xl:w-[40%] bg-darkBG3 rounded p-5 flex flex-col gap-10">
               <div className="text-xl uppercase text-center text-titleColor2">
-                Send me a message
+                Drop a message
               </div>
               <div>
                 <form className="flex flex-col gap-5 px-4 mdl:px-7">
@@ -107,7 +107,7 @@ export default function Contact() {
                     ></textarea>
                   </div>
                   <div className="w-full cursor-pointer bg-accentColor1 rounded py-2 md:py-3 px-3 flex justify-center items-center text-textColo1 group">
-                    <button className="flex justify-center items-center text-sm md:text-base group-hover:scale-[1.1] duration-300">
+                    <button className="flex justify-center items-center text-sm md:text-base group-hover:scale-[1.2] duration-300">
                       <span className="text-xl pe-2">
                         <IoIosSend />
                       </span>

@@ -15,29 +15,23 @@ export default function Services() {
               Expertise
             </p>
           </div>
-          <div className="flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row justify-between">
+          <div className="flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row justify-between items-center">
             <div className="w-full lgl:w-[60%] text-sm md:text-base text-textColo2">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              unde quasi porro beatae dolores dolorum explicabo debitis! Libero
-              cupiditate magnam unde sequi? Nam ducimus accusamus quam sit, ipsa
-              delectus quibusdam vel quos, tempore modi accusantium voluptate
-              maxime, consectetur quia autem magni. Aliquam maxime magnam
-              corrupti in unde fugit aut a ipsum ullam, ab ducimus sint
-              assumenda officiis exercitationem modi similique, quae sit. Hic
-              accusamus quis possimus itaque autem libero reprehenderit velit
-              est amet, sit ab maiores voluptatibus illo laboriosam aliquid ad
-              quibusdam. A fugiat sapiente quia facere, unde exercitationem
-              blanditiis nam ullam voluptatibus? Adipisci praesentium, est omnis
-              harum dicta numquam tempore ad quam corporis assumenda neque
-              molestias culpa voluptatibus expedita nemo nulla amet accusantium
-              possimus commodi unde. Blanditiis, dolorum modi.
+              I provide a diverse range of professional services designed to
+              meet your unique needs. From cutting-edge full-stack web
+              development and intuitive UI/UX design to advanced Machine
+              Learning solutions and effective digital marketing strategies, I
+              am dedicated to delivering quality and innovation. Whether you
+              need a robust mobile application or expert consulting to guide
+              your business, my goal is to help you succeed and thrive in
+              today&apos;s competitive landscape. Let&apos;s work together to
+              bring your vision to life.
             </div>
             <p className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end text-titleColor2">
-              The{" "}
-              <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-primaryColor2">
-                Services
-              </span>{" "}
-              I provide
+              Quality Service{" "}
+              <span className="font-handFont ps-2 lowercase text-5xl sml:text-7xl md:text-8xl font-normal text-primaryColor2">
+                _delivery
+              </span>
             </p>
           </div>
         </div>
