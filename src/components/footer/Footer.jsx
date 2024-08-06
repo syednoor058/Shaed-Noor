@@ -121,7 +121,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <span className="w-full relative hover:text-accentColor1 duration-300 group cursor-pointer">
-                      Over Righgt
+                      Over Right
                       <span className="w-full h-[1px] bg-accentColor1 inline-flex absolute left-0 -bottom-1 -translate-x-[110%] group-hover:translate-x-0 transition-transform duration-300"></span>
                     </span>
                   </li>
