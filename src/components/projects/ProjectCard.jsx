@@ -12,11 +12,8 @@ export default function ProjectCard(props) {
           className="w-full group-hover:blur-[3px] duration-[600ms] object-cover"
         />
       </div>
-      <div className="w-full h-full absolute bg-gradient-to-br from-primaryColor1/90 to-accentColor1/90 p-6 z-[2] translate-y-[100%] group-hover:translate-y-0 duration-[600ms] flex flex-col gap-5 justify-end items-center">
-        <p className="text-white">
-          A trained machine learning model to suggest five similar movies
-          compering to the input of a movie name that is provided by the users.
-        </p>
+      <div className="w-full h-full absolute bg-gradient-to-br from-primaryColor1/90 to-accentColor1/90 p-6 z-[2] translate-y-[100%] group-hover:translate-y-0 duration-[600ms] flex flex-col gap-5 items-center">
+        <p className="text-white text-sm sml:text-base">{props.desc}</p>
         <div className="w-full flex flex-row justify-between items-center">
           <div className="w-[60%] flex">
             <a className="flex flex-row justify-center items-center px-3 py-2 text-sm md:text-base text-textColo1 bg-darkBG1 rounded cursor-pointer hover:scale-[1.1] duration-[400ms]">

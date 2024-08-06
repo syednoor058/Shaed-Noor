@@ -4,6 +4,7 @@ import { GrInstagram } from "react-icons/gr";
 import { IoIosSend, IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdCall } from "react-icons/md";
+import contactImg from "../../assets/images/contact_illustrator.png";
 
 export default function Contact() {
   return (
@@ -23,8 +24,10 @@ export default function Contact() {
                   _conversation
                 </span>
               </div>
-              <div className="w-full flex flex-col-reverse md:flex-row gap-7">
-                <div className="w-full h-[240px] md:h-auto md:w-[50%] bg-primaryColor1"></div>
+              <div className="w-full flex flex-col-reverse md:flex-row gap-7 justify-center items-center">
+                <div className="w-full h-auto md:w-[50%] flex justify-center items-center">
+                  <img src={contactImg} alt="" />
+                </div>
                 <div className="w-full md:w-[50%] flex flex-col gap-5">
                   <div className="text-sm md:text-base text-textColo1 text-end">
                     I would love to hear from you! Whether you have a project in
