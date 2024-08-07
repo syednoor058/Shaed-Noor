@@ -25,18 +25,38 @@ export default function Footer() {
                   Find Me in
                 </div>
                 <div className="flex flex-row gap-7 mdl:gap-10">
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
+                  <a
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    href="https://www.facebook.com/shaed058/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaFacebookF />
-                  </div>
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
+                  </a>
+                  <a
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    href="https://github.com/syednoor058"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaGithub />
-                  </div>
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
+                  </a>
+                  <a
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    href="https://www.instagram.com/shaed_noor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <GrInstagram />
-                  </div>
-                  <div className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2">
+                  </a>
+                  <a
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    href="https://www.linkedin.com/in/shaednoor/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <FaLinkedin />
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>

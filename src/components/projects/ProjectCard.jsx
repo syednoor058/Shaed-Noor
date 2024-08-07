@@ -24,9 +24,14 @@ export default function ProjectCard(props) {
             </a>
           </div>
           <div className="w-[30%] flex justify-end">
-            <p className="w-full flex justify-end text-3xl">
+            <a
+              className="w-full flex justify-end text-3xl"
+              href={props.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="text-textColo1 hover:text-darkBG1 duration-300" />
-            </p>
+            </a>
           </div>
         </div>
       </div>

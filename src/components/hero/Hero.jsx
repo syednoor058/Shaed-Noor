@@ -158,30 +158,42 @@ export default function Hero() {
               animate="visible"
               className="w-full xl:w-[10%] xl:h-full flex flex-row xl:flex-col gap-10 xl:gap-5 justify-center xl:justify-end"
             >
-              <motion.div
+              <motion.a
+                href="https://www.facebook.com/shaed058/"
+                target="_blank"
+                rel="noopener noreferrer"
                 variants={iconVariants}
                 className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
               >
                 <FaFacebookF />
-              </motion.div>
-              <motion.div
+              </motion.a>
+              <motion.a
                 variants={iconVariants}
                 className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
+                href="https://www.linkedin.com/in/shaednoor/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
-              </motion.div>
-              <motion.div
+              </motion.a>
+              <motion.a
                 variants={iconVariants}
                 className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
+                href="https://www.instagram.com/shaed_noor/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <GrInstagram />
-              </motion.div>
-              <motion.div
+              </motion.a>
+              <motion.a
                 variants={iconVariants}
                 className="p-2 text-2xl hover:text-3xl text-textColo1 rounded hover:text-primaryColor1 cursor-pointer duration-300"
+                href="https://github.com/syednoor058"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaGithub />
-              </motion.div>
+              </motion.a>
             </motion.div>
           </div>
         </div>

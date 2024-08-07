@@ -1,4 +1,7 @@
-import React from "react";
+import emailjs from "@emailjs/browser";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useRef, useState } from "react";
+import { CgClose } from "react-icons/cg";
 import { FaFacebookF, FaGithub, FaLinkedin } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { IoIosSend, IoMdMail } from "react-icons/io";
@@ -7,6 +10,106 @@ import { MdCall } from "react-icons/md";
 import contactImg from "../../assets/images/contact_illustrator.png";
 
 export default function Contact() {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [firstNameErrMsg, setFirstNameErrMsg] = useState("");
+  const [lastNameErrMsg, setLastNameErrMsg] = useState("");
+  const [phoneErrMsg, setPhoneErrMsg] = useState("");
+  const [emailErrMsg, setEmailErrMsg] = useState("");
+  const [subErrMsg, setSubErrMsg] = useState("");
+  const [errMsg, setErrMsg] = useState("");
+  const [successMsg, setSuccessMsg] = useState("");
+
+  // ========== Email Validation start here ==============
+  const emailValidation = () => {
+    return String(email)
+      .toLocaleLowerCase()
+      .match(/^\w+([-]?\w+)*@\w+([-]?\w+)*(\.\w{2,3})+$/);
+  };
+
+  const form = useRef();
+
+  const closeSuccessMsg = (e) => {
+    e.preventDefault();
+    setSuccessMsg("");
+  };
+
+  const handleSend = (e) => {
+    e.preventDefault();
+
+    if (firstName === "") {
+      setFirstNameErrMsg("* First name is required!");
+    } else {
+      setFirstNameErrMsg("");
+      if (lastName === "") {
+        setLastNameErrMsg("* Last name is required!");
+      } else {
+        setLastNameErrMsg("");
+        if (phoneNumber === "") {
+          setPhoneErrMsg("* Phone number is required!");
+        } else {
+          setPhoneErrMsg("");
+          if (email === "") {
+            setEmailErrMsg("* Email is required!");
+          } else if (!emailValidation(email)) {
+            setEmailErrMsg("* Invalid email address!");
+          } else {
+            setEmailErrMsg("");
+            if (subject === "") {
+              setSubErrMsg("* Subject is required!");
+            } else {
+              setSubErrMsg("");
+              if (message === "") {
+                setErrMsg("* Blank message can not be sent!");
+              } else {
+                setErrMsg("");
+                setSuccessMsg(
+                  `Thank you dear ${
+                    firstName + " " + lastName
+                  }, your message has been sent successfully!`
+                );
+
+                emailjs
+                  .sendForm(
+                    "service_k918xce",
+                    "template_uzavnvf",
+                    form.current,
+                    {
+                      publicKey: "RVdjFgeK3-m4-E8RM",
+                    }
+                  )
+                  .then(
+                    () => {
+                      console.log("SUCCESS!");
+                    },
+                    (error) => {
+                      console.log("FAILED...", error.text);
+                    }
+                  );
+                setErrMsg("");
+                setFirstName("");
+                setLastName("");
+                setPhoneNumber("");
+                setEmail("");
+                setSubject("");
+                setMessage("");
+                setFirstNameErrMsg("");
+                setLastNameErrMsg("");
+                setPhoneErrMsg("");
+                setEmailErrMsg("");
+                setSubErrMsg("");
+              }
+            }
+          }
+        }
+      }
+    }
+  };
+
   return (
     <div id="contact">
       <div className="w-full py-10 lg:py-20 bg-darkBG1 flex flex-col gap-7 lg:gap-10 overflow-hidden">
@@ -41,18 +144,38 @@ export default function Contact() {
                       Find Me in
                     </div>
                     <div className="flex flex-row gap-7 mdl:gap-10 text-2xl">
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
+                      <a
+                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
+                        href="https://www.facebook.com/shaed058/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaFacebookF />
-                      </div>
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
+                      </a>
+                      <a
+                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
+                        href="https://github.com/syednoor058"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaGithub />
-                      </div>
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
+                      </a>
+                      <a
+                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
+                        href="https://www.instagram.com/shaed_noor/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <GrInstagram />
-                      </div>
-                      <div className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300">
+                      </a>
+                      <a
+                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
+                        href="https://www.linkedin.com/in/shaednoor/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <FaLinkedin />
-                      </div>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -64,43 +187,96 @@ export default function Contact() {
                 Drop a message
               </div>
               <div>
-                <form className="flex flex-col gap-5 px-4 mdl:px-7">
+                <form className="flex flex-col gap-5 px-4 mdl:px-7" ref={form}>
                   <div className="w-full flex flex-col md:flex-row gap-5">
                     <div className="w-full md:w-[50%]">
                       <input
                         className="w-full h-8 outline-none border-b-[1px] border-darkBG1 text-sm md:text-base bg-transparent"
                         placeholder="First name"
+                        onChange={(e) => {
+                          setFirstName(e.target.value);
+                        }}
+                        value={firstName}
+                        type="text"
+                        name="first_name"
                       />
+                      {firstNameErrMsg && (
+                        <p className="pt-1 text-accentColor1 text-xs tracking-wide">
+                          {firstNameErrMsg}
+                        </p>
+                      )}
                     </div>
                     <div className="w-full md:w-[50%]">
                       <input
                         className="w-full h-8 outline-none border-b-[1px] border-darkBG1 bg-transparent text-sm md:text-base"
                         placeholder="Last name"
+                        onChange={(e) => {
+                          setLastName(e.target.value);
+                        }}
+                        value={lastName}
+                        type="text"
+                        name="last_name"
                       />
+                      {lastNameErrMsg && (
+                        <p className="pt-1 text-accentColor1 text-xs tracking-wide">
+                          {lastNameErrMsg}
+                        </p>
+                      )}
                     </div>
                   </div>
                   <div className="w-full">
                     <input
                       className="w-full h-8 outline-none border-b-[1px] border-darkBG1 bg-transparent text-sm md:text-base"
                       placeholder="Phone number"
+                      onChange={(e) => {
+                        setPhoneNumber(e.target.value);
+                      }}
+                      value={phoneNumber}
+                      type="text"
+                      name="from_mobile"
                     />
+                    {phoneErrMsg && (
+                      <p className="pt-1 text-accentColor1 text-xs tracking-wide">
+                        {phoneErrMsg}
+                      </p>
+                    )}
                   </div>
                   <div className="w-full">
                     <input
                       className="w-full h-8 outline-none border-b-[1px] border-darkBG1 bg-transparent text-sm md:text-base"
                       placeholder="Email address"
+                      onChange={(e) => {
+                        setEmail(e.target.value);
+                      }}
+                      value={email}
+                      name="from_email"
+                      type="email"
                     />
+                    {emailErrMsg && (
+                      <p className="pt-1 text-accentColor1 text-xs tracking-wide">
+                        {emailErrMsg}
+                      </p>
+                    )}
                   </div>
                   <div className="w-full">
                     <input
                       className="w-full h-8 outline-none border-b-[1px] border-darkBG1 bg-transparent text-sm md:text-base"
                       placeholder="Subject"
+                      onChange={(e) => setSubject(e.target.value)}
+                      value={subject}
+                      name="from_subject"
+                      type="text"
                     />
+                    {subErrMsg && (
+                      <p className="pt-1 text-accentColor1 text-xs tracking-wide">
+                        {subErrMsg}
+                      </p>
+                    )}
                   </div>
                   <div className="w-full">
                     <textarea
-                      // onChange={(e) => setMessage(e.target.value)}
-                      // value={message}
+                      onChange={(e) => setMessage(e.target.value)}
+                      value={message}
                       name="message"
                       className="w-full outline-none border-b-[1px] border-darkBG1 bg-transparent text-sm md:text-base"
                       placeholder="Your message"
@@ -108,8 +284,16 @@ export default function Contact() {
                       cols="lg:30"
                       rows="5"
                     ></textarea>
+                    {errMsg && (
+                      <p className="pt-1 text-accentColor1 text-xs tracking-wide">
+                        {errMsg}
+                      </p>
+                    )}
                   </div>
-                  <div className="w-full cursor-pointer bg-accentColor1 rounded py-2 md:py-3 px-3 flex justify-center items-center text-textColo1 group">
+                  <div
+                    className="w-full cursor-pointer bg-accentColor1 rounded py-2 md:py-3 px-3 flex justify-center items-center text-textColo1 group"
+                    onClick={handleSend}
+                  >
                     <button className="flex justify-center items-center text-sm md:text-base group-hover:scale-[1.2] duration-300">
                       <span className="text-xl pe-2">
                         <IoIosSend />
@@ -117,6 +301,34 @@ export default function Contact() {
                       Send
                     </button>
                   </div>
+                  <AnimatePresence>
+                    {successMsg && (
+                      <motion.div
+                        initial={{ x: "-50%", opacity: 0 }}
+                        animate={{
+                          x: 0,
+                          opacity: 1,
+                          transition: { duration: 0.5 },
+                        }}
+                        exit={{
+                          x: "-50%",
+                          opacity: 0,
+                          transition: { duration: 0.5 },
+                        }}
+                        className="w-full mb-2 py-2 px-3 rounded-sm bg-green-500 text-white text-base tracking-wide flex justify-between z-50"
+                      >
+                        {successMsg}
+                        <span>
+                          <button
+                            className="cursor-pointer text-bodyColor"
+                            onClick={closeSuccessMsg}
+                          >
+                            <CgClose />
+                          </button>
+                        </span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </form>
               </div>
             </div>
