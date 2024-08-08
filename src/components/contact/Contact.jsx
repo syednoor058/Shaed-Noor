@@ -145,7 +145,7 @@ export default function Contact() {
                     </div>
                     <div className="flex flex-row gap-7 mdl:gap-10 text-2xl">
                       <a
-                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
+                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300 pb-2"
                         href="https://www.facebook.com/shaed058/"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -153,7 +153,7 @@ export default function Contact() {
                         <FaFacebookF />
                       </a>
                       <a
-                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
+                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300 pb-2"
                         href="https://github.com/syednoor058"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -162,14 +162,14 @@ export default function Contact() {
                       </a>
                       <a
                         className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
-                        href="https://www.instagram.com/shaed_noor/"
+                        href="https://www.instagram.com/shaed_noor/ pb-2"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <GrInstagram />
                       </a>
                       <a
-                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300"
+                        className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300 pb-2"
                         href="https://www.linkedin.com/in/shaednoor/"
                         target="_blank"
                         rel="noopener noreferrer"
