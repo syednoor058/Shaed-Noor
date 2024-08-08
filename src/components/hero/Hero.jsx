@@ -148,6 +148,10 @@ export default function Hero() {
                 <Link
                   className="flex flex-row gap-1 justify-center items-center px-5 py-2 text-primaryColor1 rounded border border-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base"
                   to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
                 >
                   <span className="text-lg">
                     <MdCall />
