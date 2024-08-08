@@ -8,7 +8,9 @@ import {
 } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
 import { MdCall, MdFileDownload } from "react-icons/md";
+import { Link } from "react-scroll";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import resume from "../../assets/documents/resume of SYED SHAEDUZZAMAN NOOR.pdf";
 import heroImg from "../../assets/images/hero_image.png";
 
 export default function Hero() {
@@ -128,7 +130,11 @@ export default function Hero() {
                 variants={textVariants}
                 className="w-[50%] flex justify-center items-center"
               >
-                <a className="flex flex-row gap-1 justify-center items-center px-5 py-[9px] text-titleColor1 rounded bg-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base">
+                <a
+                  className="flex flex-row gap-1 justify-center items-center px-5 py-[9px] text-titleColor1 rounded bg-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base"
+                  href={resume}
+                  download="Resume of SYED SHAEDUZZAMAN NOOR.pdf"
+                >
                   <span className="text-lg">
                     <MdFileDownload />
                   </span>
@@ -139,12 +145,15 @@ export default function Hero() {
                 variants={textVariants}
                 className="w-[50%] flex justify-center items-center"
               >
-                <a className="flex flex-row gap-1 justify-center items-center px-5 py-2 text-primaryColor1 rounded border border-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base">
+                <Link
+                  className="flex flex-row gap-1 justify-center items-center px-5 py-2 text-primaryColor1 rounded border border-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base"
+                  to="contact"
+                >
                   <span className="text-lg">
                     <MdCall />
                   </span>
                   Contact Me
-                </a>
+                </Link>
               </motion.div>
             </div>
           </motion.div>
