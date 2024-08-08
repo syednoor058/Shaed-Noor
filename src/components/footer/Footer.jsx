@@ -26,7 +26,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-row gap-7 mdl:gap-10">
                   <a
-                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2 pb-3"
                     href="https://www.facebook.com/shaed058/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -34,7 +34,7 @@ export default function Footer() {
                     <FaFacebookF />
                   </a>
                   <a
-                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2 pb-3"
                     href="https://github.com/syednoor058"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export default function Footer() {
                     <FaGithub />
                   </a>
                   <a
-                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2 pb-3"
                     href="https://www.instagram.com/shaed_noor/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -50,7 +50,7 @@ export default function Footer() {
                     <GrInstagram />
                   </a>
                   <a
-                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2"
+                    className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2 pb-3"
                     href="https://www.linkedin.com/in/shaednoor/"
                     target="_blank"
                     rel="noopener noreferrer"
