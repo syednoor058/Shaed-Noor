@@ -7,7 +7,7 @@ import { GrInstagram } from "react-icons/gr";
 import { IoIosSend, IoMdMail } from "react-icons/io";
 import { IoLocationSharp } from "react-icons/io5";
 import { MdCall } from "react-icons/md";
-import contactImg from "../../assets/images/contact_illustrator.png";
+import contactImg from "../../assets/images/contact_illustrator.webp";
 
 export default function Contact() {
   const [firstName, setFirstName] = useState("");

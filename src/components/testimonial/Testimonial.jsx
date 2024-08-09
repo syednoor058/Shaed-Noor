@@ -5,10 +5,10 @@ import puppetBrush from "../../assets/images/brand_images/puppetbrush.png";
 import qahaf from "../../assets/images/brand_images/qahaf.png";
 import quantumQube from "../../assets/images/brand_images/quantum_qube.png";
 import sweetCake from "../../assets/images/brand_images/sweet_cake.png";
-import azizulImg from "../../assets/images/testimonials/azizul.png";
-import rituImg from "../../assets/images/testimonials/rhitu.png";
-import shararImg from "../../assets/images/testimonials/sharar.png";
-import tanhaImg from "../../assets/images/testimonials/tanha.png";
+import azizulImg from "../../assets/images/testimonials/azizul.webp";
+import rituImg from "../../assets/images/testimonials/rhitu.webp";
+import shararImg from "../../assets/images/testimonials/sharar.webp";
+import tanhaImg from "../../assets/images/testimonials/tanha.webp";
 import TestimonialCard from "./TestimonialCard";
 
 export default function Testimonial() {

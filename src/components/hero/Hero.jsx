@@ -11,7 +11,7 @@ import { MdCall, MdFileDownload } from "react-icons/md";
 import { Link } from "react-scroll";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import resume from "../../assets/documents/resume of SYED SHAEDUZZAMAN NOOR.pdf";
-import heroImg from "../../assets/images/hero_image.png";
+import heroImg from "../../assets/images/hero_image.webp";
 
 export default function Hero() {
   const textVariants = {

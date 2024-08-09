@@ -1,11 +1,11 @@
 import React from "react";
-import appTesting from "../../assets/images/projects_images/app_testing.jpg";
-import housePred from "../../assets/images/projects_images/house_price_pred.jpg";
-import hungryShaed from "../../assets/images/projects_images/hungry_shaed.jpg";
-import movieSuggest from "../../assets/images/projects_images/movie_sugges_sys.jpg";
-import personalPortfolio from "../../assets/images/projects_images/personal_portfolio.jpg";
-import carPricePred from "../../assets/images/projects_images/preowned_car_price_pred.jpg";
-import pluginsTesting from "../../assets/images/projects_images/wordpress_plugins_testing.jpg";
+import appTesting from "../../assets/images/projects_images/app_testing.webp";
+import housePred from "../../assets/images/projects_images/house_price_pred.webp";
+import hungryShaed from "../../assets/images/projects_images/hungry_shaed.webp";
+import movieSuggest from "../../assets/images/projects_images/movie_sugges_sys.webp";
+import personalPortfolio from "../../assets/images/projects_images/personal_portfolio.webp";
+import carPricePred from "../../assets/images/projects_images/preowned_car_price_pred.webp";
+import pluginsTesting from "../../assets/images/projects_images/wordpress_plugins_testing.webp";
 import ProjectCard from "./ProjectCard";
 
 export default function Project() {

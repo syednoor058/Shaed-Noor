@@ -1,5 +1,5 @@
 import { GoArrowUpRight } from "react-icons/go";
-import aboutImage from "../../assets/images/about_img.png";
+import aboutImage from "../../assets/images/about_img.webp";
 
 export default function About() {
   return (
