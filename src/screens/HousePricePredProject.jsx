@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import Marquee from "react-fast-marquee";
-import { FaCode, FaGithub } from "react-icons/fa6";
+import { AiFillLayout } from "react-icons/ai";
+import { FaCode, FaDatabase, FaGithub } from "react-icons/fa6";
+import { IoStatsChart } from "react-icons/io5";
 import fastApi from "../assets/images/project_1_img/fastapi.png";
 import github from "../assets/images/project_1_img/github.png";
 import heroImg from "../assets/images/project_1_img/hero_img.png";
@@ -105,10 +107,49 @@ export default function HousePricePredProject() {
               _objectives
             </span>
           </div>
+          <div className="text-textColo2">
+            By implimenting Real Estate House Price Prediction System, we aim to
+            create a robust tool that enhances transperancy and effiency in the
+            real estate market. It will provide benefits to all stakeholders
+            through accurate and data-driven estimations.
+          </div>
           <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 xl:gap-10">
-            <div className="h-[250px] bg-gradient-to-tr from-primaryColor1 to-accentColor1 rounded"></div>
-            <div className="h-[250px] bg-gradient-to-tr from-primaryColor1 to-accentColor1 rounded"></div>
-            <div className="h-[250px] bg-gradient-to-tr from-primaryColor1 to-accentColor1 rounded"></div>
+            <div className="bg-gradient-to-tr from-primaryColor1 to-accentColor1 rounded flex flex-col gap-3 p-5 md:p-7 xl:p-10 cursor-pointer">
+              <div className="text-3xl text-yellow-200 flex justify-center">
+                <IoStatsChart />
+              </div>
+              <div className="font-titleFont text-titleColor1 text-center text-xl font-bold">
+                Accurate Price Estimation
+              </div>
+              <div className="text-textColo1 text-base">
+                Develop a model that predicts the price of pre-owned houses with
+                high accuracy.
+              </div>
+            </div>
+            <div className="bg-gradient-to-tr from-primaryColor1 to-accentColor1 rounded flex flex-col gap-3 p-5 md:p-7 xl:p-10 cursor-pointer">
+              <div className="text-3xl text-yellow-200 flex justify-center">
+                <AiFillLayout />
+              </div>
+              <div className="font-titleFont text-titleColor1 text-center text-xl font-bold">
+                User-Friendly Interface
+              </div>
+              <div className="text-textColo1 text-base">
+                Create an easy-to-use interface for users to input property
+                details and receive price predictions.
+              </div>
+            </div>
+            <div className="bg-gradient-to-tr from-primaryColor1 to-accentColor1 rounded flex flex-col gap-3 p-5 md:p-7 xl:p-10 cursor-pointer">
+              <div className="text-3xl text-yellow-200 flex justify-center">
+                <FaDatabase />
+              </div>
+              <div className="font-titleFont text-titleColor1 text-center text-xl font-bold">
+                Data-Driven Insights
+              </div>
+              <div className="text-textColo1 text-base">
+                Provide insights into how different factors influence house
+                prices.
+              </div>
+            </div>
           </div>
         </div>
         <div className="px-7 sml:px-9  md:px-12 lg:px-20 flex flex-col-reverse gap-10 lg:gap-0 lg:flex-row justify-between">
