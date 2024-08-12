@@ -8,7 +8,7 @@ function App() {
     <div className="font-bodyFont">
       <Router>
         <Routes>
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/" element={<Home />} />
           <Route
             exact
             path="/house-price-prediction-project"
