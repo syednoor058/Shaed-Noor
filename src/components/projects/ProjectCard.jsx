@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { GoArrowUpRight } from "react-icons/go";
+import { Link } from "react-router-dom";
 
 export default function ProjectCard(props) {
   return (
@@ -16,25 +17,25 @@ export default function ProjectCard(props) {
         <p className="text-white text-sm sml:text-base">{props.desc}</p>
         <div className="w-full flex flex-row justify-between items-center">
           <div className="w-[60%] flex">
-            <a
+            <Link
               className="flex flex-row justify-center items-center px-3 py-2 text-sm md:text-base text-textColo1 bg-darkBG1 rounded cursor-pointer hover:scale-[1.1] duration-[400ms]"
-              href={props.detailsLink}
+              to={props.detailsLink}
             >
               Details{" "}
               <span className="ps-2 text-xl">
                 <GoArrowUpRight />
               </span>
-            </a>
+            </Link>
           </div>
           <div className="w-[30%] flex justify-end">
-            <a
+            <Link
               className="w-full flex justify-end text-3xl"
-              href={props.githubLink}
+              to={props.githubLink}
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaGithub className="text-textColo1 hover:text-darkBG1 duration-300" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
