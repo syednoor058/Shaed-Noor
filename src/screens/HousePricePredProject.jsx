@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Marquee from "react-fast-marquee";
 import { FaCode, FaGithub } from "react-icons/fa6";
 import fastApi from "../assets/images/project_1_img/fastapi.png";
@@ -15,6 +15,10 @@ import Footer from "../components/footer/Footer";
 import Navbar2 from "../components/navbar/Navbar2";
 
 export default function HousePricePredProject() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="bg-darkBG2 overflow-hidden">
       <Navbar2 />
