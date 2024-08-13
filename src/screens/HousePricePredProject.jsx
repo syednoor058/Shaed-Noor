@@ -3,16 +3,18 @@ import Marquee from "react-fast-marquee";
 import { AiFillLayout } from "react-icons/ai";
 import { FaCode, FaDatabase, FaGithub } from "react-icons/fa6";
 import { IoStatsChart } from "react-icons/io5";
-import fastApi from "../assets/images/project_1_img/fastapi.png";
-import github from "../assets/images/project_1_img/github.png";
-import heroImg from "../assets/images/project_1_img/hero_img.png";
-import nextJs from "../assets/images/project_1_img/nextjs.png";
-import numpy from "../assets/images/project_1_img/numpy.png";
-import objectiveImg from "../assets/images/project_1_img/objectives.png";
-import pandas from "../assets/images/project_1_img/pandas.png";
-import python from "../assets/images/project_1_img/python.png";
-import scikit from "../assets/images/project_1_img/scikit_learn.png";
-import tailwind from "../assets/images/project_1_img/tailwind.png";
+import codingImg from "../assets/images/project_1_img/coding.webp";
+import dataGraph from "../assets/images/project_1_img/data_graph.webp";
+import fastApi from "../assets/images/project_1_img/fastapi.webp";
+import github from "../assets/images/project_1_img/github.webp";
+import heroImg from "../assets/images/project_1_img/hero_img.webp";
+import nextJs from "../assets/images/project_1_img/nextjs.webp";
+import numpy from "../assets/images/project_1_img/numpy.webp";
+import objectiveImg from "../assets/images/project_1_img/objectives.webp";
+import pandas from "../assets/images/project_1_img/pandas.webp";
+import python from "../assets/images/project_1_img/python.webp";
+import scikit from "../assets/images/project_1_img/scikit_learn.webp";
+import tailwind from "../assets/images/project_1_img/tailwind.webp";
 import Footer from "../components/footer/Footer";
 import Navbar2 from "../components/navbar/Navbar2";
 
@@ -70,7 +72,7 @@ export default function HousePricePredProject() {
             </div>
             <div className="w-full lg:w-[35%] xl:w-[40%] flex justify-end">
               <img
-                className="w-[90%] md:w-[80%] lg:w-full h-auto object-contain"
+                className="w-[80%] md:w-[80%] lg:w-full h-auto object-contain"
                 src={heroImg}
                 alt=""
               />
@@ -159,7 +161,7 @@ export default function HousePricePredProject() {
           <div className="w-full lg:w-[65%] xl:w-[60%] flex flex-col gap-10 text-titleColor2">
             <div className="font-titleFont font-bold uppercase text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl text-end">
               Key{" "}
-              <span className="font-handFont font-normal text-primaryColor1 normal-case ps-2 text-5xl sml:text-7xl md:text-8xl">
+              <span className="font-handFont font-normal text-accentColor1 normal-case ps-2 text-5xl sml:text-7xl md:text-8xl">
                 _features
               </span>
             </div>
@@ -203,12 +205,12 @@ export default function HousePricePredProject() {
         </div>
         <div className="px-7 sml:px-9  md:px-12 lg:px-20 flex gap-10 flex-col-reverse lg:gap-0 lg:flex-row-reverse justify-between">
           <div className="w-full lg:w-[30%] xl:w-[35%] flex justify-center items-center">
-            <img className="object-contain" src={objectiveImg} alt="" />
+            <img className="object-contain" src={dataGraph} alt="" />
           </div>
           <div className="w-full lg:w-[65%] xl:w-[60%] flex flex-col gap-10 text-titleColor2">
             <div className="font-titleFont font-bold uppercase text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
               Implimentation{" "}
-              <span className="font-handFont font-normal text-primaryColor1 normal-case ps-2 text-5xl sml:text-7xl md:text-8xl">
+              <span className="font-handFont font-normal normal-case ps-2 text-5xl sml:text-7xl md:text-8xl text-[#07BEB8]">
                 _steps
               </span>
             </div>
@@ -260,7 +262,7 @@ export default function HousePricePredProject() {
         </div>
         <div className="px-7 sml:px-9  md:px-12 lg:px-20 flex gap-10 lg:gap-0 flex-col-reverse lg:flex-row justify-between">
           <div className="w-full lg:w-[30%] xl:w-[35%] flex justify-center items-center">
-            <img className="object-contain" src={objectiveImg} alt="" />
+            <img className="object-contain" src={codingImg} alt="" />
           </div>
           <div className="w-full lg:w-[65%] xl:w-[60%] flex flex-col gap-10 text-titleColor2">
             <div className="font-titleFont font-bold uppercase text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl text-end">
