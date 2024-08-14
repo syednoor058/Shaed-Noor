@@ -41,7 +41,7 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 justify-center items-center md:px-20 lg:px-0">
+        <div className="w-full grid grid-cols-1 mdl:grid-cols-2 xl:grid-cols-3 gap-5 justify-center items-center px-8 md:px-20 mdl:px-0">
           <ProjectCard
             coverImg={housePred}
             desc="Developed a house price prediction model using machine learning algorithms. Built a user-friendly website with React.js and FastAPI for the backend, ensuring efficient data processing and accurate predictions."

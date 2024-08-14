@@ -115,7 +115,7 @@ export default function HousePricePredProject() {
             real estate market. It will provide benefits to all stakeholders
             through accurate and data-driven estimations.
           </div>
-          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 xl:gap-10">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-7 xl:gap-10 px-8 md:px-0">
             <div className="bg-gradient-to-tr from-primaryColor1 to-accentColor1 rounded flex flex-col gap-3 p-5 md:p-7 xl:p-10 cursor-pointer">
               <div className="text-3xl text-yellow-200 flex justify-center">
                 <IoStatsChart />
