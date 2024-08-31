@@ -4,7 +4,7 @@ import aboutImage from "../../assets/images/about_img.webp";
 export default function About() {
   return (
     <div id="about">
-      <div className="w-full bg-darkBG2 px-7 sml:px-9 py-10 md:px-12 lg:px-20 lg:py-20 flex flex-col-reverse lg:flex-row overflow-hidden gap-10 lg:gap-0">
+      <div className="w-full bg-darkBG2 px-5 py-10 md:px-10 lg:px-20 lg:py-20 flex flex-col-reverse lg:flex-row overflow-hidden gap-10 lg:gap-0">
         <div className="w-full lg:w-[50%] flex justify-center items-center">
           <img
             className="w-[70%] lg:w-[90%] h-auto object-contain"
@@ -13,8 +13,8 @@ export default function About() {
           />
         </div>
         <div className="w-full lg:w-[50%]">
-          <div className="w-full flex flex-col gap-7 lg:gap-10">
-            <div className="w-full flex flex-col-reverse gap-7 lg:gap-10">
+          <div className="w-full flex flex-col gap-5 lg:gap-10">
+            <div className="w-full flex flex-col-reverse gap-5 lg:gap-10">
               <div>
                 <p className="text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start text-titleColor2">
                   a Breif about{" "}

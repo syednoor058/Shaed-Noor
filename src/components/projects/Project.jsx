@@ -11,15 +11,15 @@ import ProjectCard from "./ProjectCard";
 export default function Project() {
   return (
     <div id="projects">
-      <div className="bg-darkBG3 w-full px-7 sml:px-9 pb-10 md:px-12 lg:px-20 lg:pb-20 overflow-hidden flex flex-col gap-7 lg:gap-10">
+      <div className="bg-darkBG3 w-full pt-10 px-5 pb-10 md:px-10 lg:px-20 lg:pb-20 overflow-hidden flex flex-col gap-5 lg:gap-10">
         <div>
-          <div className="w-full flex flex-col gap-7 lg:gap-10">
+          <div className="w-full flex flex-col gap-5 lg:gap-10">
             <div>
               <p className="uppercase font-titleFont text-xs md:text-base text-end text-accentColor1">
                 Portfolio
               </p>
             </div>
-            <div className="flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row-reverse justify-between items-center">
+            <div className="flex flex-col-reverse gap-5 lgl:gap-0 lgl:flex-row-reverse justify-between items-center">
               <div className="w-full lgl:w-[60%] text-sm md:text-base text-end text-textColo2">
                 Welcome to my project portfolio, where creativity meets
                 functionality. Here, you will find a curated selection of my
@@ -41,7 +41,7 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <div className="w-full grid grid-cols-1 mdl:grid-cols-2 xl:grid-cols-3 gap-5 justify-center items-center px-8 md:px-20 mdl:px-0">
+        <div className="w-full grid grid-cols-2 xl:grid-cols-3 gap-3 md:gap-5 justify-center items-center">
           <ProjectCard
             coverImg={housePred}
             desc="Developed a house price prediction model using machine learning algorithms. Built a user-friendly website with React.js and FastAPI for the backend, ensuring efficient data processing and accurate predictions."

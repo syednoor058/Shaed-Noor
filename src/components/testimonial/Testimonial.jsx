@@ -15,14 +15,14 @@ export default function Testimonial() {
   return (
     <div
       id="testimonial"
-      className="w-full flex flex-col py-10 lg:py-20 overflow-hidden gap-7 lg:gap-10 bg-darkBG2"
+      className="w-full flex flex-col py-10 lg:py-20 overflow-hidden gap-5 lg:gap-10 bg-darkBG2"
     >
-      <div className="w-full flex flex-col gap-10 px-7 sml:px-9 md:px-12 lg:px-20">
-        <div className="w-full flex flex-col gap-10">
+      <div className="w-full flex flex-col gap-10 px-5 md:px-10 lg:px-20">
+        <div className="w-full flex flex-col gap-5 md:gap-10">
           <div className="uppercase font-titleFont text-xs md:text-base text-start text-accentColor1">
             Testimonial
           </div>
-          <div className="w-full flex flex-col-reverse gap-10 lgl:gap-0 lgl:flex-row justify-between items-center">
+          <div className="w-full flex flex-col-reverse gap-5 lgl:gap-0 lgl:flex-row justify-between items-center">
             <p className="w-full lgl:w-[60%] text-sm md:text-base text-textColo2">
               Discover what my clients have to say about their experiences
               working with me. Their feedback highlights the quality,

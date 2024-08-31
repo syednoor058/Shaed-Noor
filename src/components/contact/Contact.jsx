@@ -112,22 +112,22 @@ export default function Contact() {
 
   return (
     <div id="contact">
-      <div className="w-full py-10 lg:py-20 bg-darkBG1 flex flex-col gap-7 lg:gap-10 overflow-hidden">
-        <div className="w-full px-7 sml:px-9  md:px-12 lg:px-20 overflow-hidden flex flex-col gap-7 lg:gap-10">
+      <div className="w-full py-10 lg:py-20 bg-darkBG1 flex flex-col gap-5 lg:gap-10 overflow-hidden">
+        <div className="w-full px-5  md:px-10 lg:px-20 overflow-hidden flex flex-col gap-5 lg:gap-10">
           <div className="">
             <p className="uppercase font-titleFont text-xs md:text-base text-end text-accentColor1">
               Contact
             </p>
           </div>
-          <div className="w-full flex flex-col xl:flex-row gap-7 lg:gap-10 items-center">
-            <div className="w-full xl:w-[60%] flex flex-col gap-7">
+          <div className="w-full flex flex-col xl:flex-row gap-5 lg:gap-10 items-center">
+            <div className="w-full xl:w-[60%] flex flex-col gap-5">
               <div className="w-full text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-titleColor1">
                 Let&apos;s have a{"  "}
                 <span className="font-handFont ps-2 normal-case text-5xl sml:text-7xl md:text-8xl font-normal text-[#dae85e]">
                   _conversation
                 </span>
               </div>
-              <div className="w-full flex flex-col-reverse md:flex-row gap-7 justify-center items-center">
+              <div className="w-full flex flex-col-reverse md:flex-row gap-5 justify-center items-center">
                 <div className="w-full h-auto md:w-[50%] flex justify-center items-center">
                   <img src={contactImg} alt="" />
                 </div>
@@ -143,7 +143,7 @@ export default function Contact() {
                     <div className="uppercase text-lg text-textColo1">
                       Find Me in
                     </div>
-                    <div className="flex flex-row gap-7 mdl:gap-10 text-2xl">
+                    <div className="flex flex-row gap-5 mdl:gap-10 text-2xl">
                       <a
                         className=" rounded text-primaryColor1 cursor-pointer hover:bg-transparent hover:text-darkBG3 hover:-translate-y-2 duration-300 pb-2"
                         href="https://www.facebook.com/shaed058/"

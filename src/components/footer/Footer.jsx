@@ -4,10 +4,10 @@ import logo from "../../assets/images/title_logo.png";
 
 export default function Footer() {
   return (
-    <div className="w-full flex flex-col gap-7 lg:gap-10 bg-black">
-      <div className="w-full bg-black pt-6 px-7 sml:px-9 md:px-12 lg:px-20 overflow-hidden flex flex-col gap-7 lg:gap-10 rounded-t-2xl">
-        <div className="w-full flex flex-col gap-7 lg:gap-10 items-center">
-          <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-7 lg:gap-10 items-end">
+    <div className="w-full flex flex-col gap-5 lg:gap-10 bg-black">
+      <div className="w-full bg-black pt-6 px-5 md:px-10 lg:px-20 overflow-hidden flex flex-col gap-5 lg:gap-10 rounded-t-2xl">
+        <div className="w-full flex flex-col gap-5 lg:gap-10 items-center">
+          <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-10 items-end">
             <div className="w-full flex flex-col gap-5">
               <div>
                 <img src={logo} className="h-[100px] object-contain" alt="" />
@@ -24,7 +24,7 @@ export default function Footer() {
                 <div className="uppercase text-sm md:text-base lg:text-lg text-textColo1">
                   Find Me in
                 </div>
-                <div className="flex flex-row gap-7 mdl:gap-10">
+                <div className="flex flex-row gap-5 mdl:gap-10">
                   <a
                     className="rounded text-accentColor1 hover:text-textColo1 duration-300 cursor-pointer text-2xl hover:-translate-y-2 pb-3"
                     href="https://www.facebook.com/shaed058/"
