@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import interaid from "../../assets/images/brand_images/interaid.webp";
+import kickOff from "../../assets/images/brand_images/kick_off.webp";
 import puppetBrush from "../../assets/images/brand_images/puppetbrush.webp";
 import qahaf from "../../assets/images/brand_images/qahaf.webp";
 import quantumQube from "../../assets/images/brand_images/quantum_qube.webp";
@@ -97,37 +98,41 @@ export default function Testimonial() {
           I have worked with
         </p>
       </div>
-      <div className="w-full grid grid-cols-3 xl:grid-cols-5 gap-3 lg:gap-5 px-10 md:px-10 lg:px-40">
+      <div className="w-full grid grid-cols-3 md:grid-cols-4 xl:grid-cols-5 px-10 md:px-10 lg:px-40">
         <div className="flex justify-center items-center">
-          <img className="w-[70px] md:w-[150px]" src={qahaf} alt="qahaf_logo" />
+          <img className="w-[70px] md:w-[120px]" src={qahaf} alt="qahaf_logo" />
         </div>
         <div className="flex justify-center items-center">
           <img
-            className="w-[70px] md:w-[150px]"
-            src={sweetCake}
-            alt="qahaf_logo"
-          />
-        </div>
-        <div className="flex justify-center items-center">
-          <img
-            className="w-[70px] md:w-[150px] "
+            className="w-[70px] md:w-[120px] "
             src={interaid}
-            alt="qahaf_logo"
+            alt="interaid"
           />
         </div>
+
         <div className="flex justify-center items-center">
           <img
-            className="w-[70px] md:w-[150px]"
+            className="w-[70px] md:w-[120px]"
             src={quantumQube}
-            alt="qahaf_logo"
+            alt="quantum_qube"
           />
         </div>
         <div className="flex justify-center items-center">
           <img
-            className="w-[70px] md:w-[150px]"
-            src={puppetBrush}
-            alt="qahaf_logo"
+            className="w-[70px] md:w-[120px]"
+            src={sweetCake}
+            alt="sweet_cakes"
           />
+        </div>
+        <div className="flex justify-center items-center">
+          <img
+            className="w-[70px] md:w-[120px]"
+            src={puppetBrush}
+            alt="puppetbrush"
+          />
+        </div>
+        <div className="flex justify-center items-center">
+          <img className="w-[70px] md:w-[120px]" src={kickOff} alt="kick_off" />
         </div>
       </div>
     </div>
