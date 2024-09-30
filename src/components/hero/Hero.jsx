@@ -78,23 +78,23 @@ export default function Hero() {
             variants={textVariants}
             initial="hidden"
             animate="visible"
-            className="w-full lg:w-[60%] xl:w-[55%] flex flex-col gap-5 justify-center items-center"
+            className="w-full lg:w-[60%] xl:w-[55%] flex flex-col gap-3 mdl:gap-5 justify-center"
           >
-            <div className="w-full flex flex-row-reverse lg:flex-row justify-between text-textColo1">
-              <motion.div
-                variants={textVariants}
-                className=" w-[30%] md:w-[25%] lgl:w-[30%] xl:w-[25%] text-xs sml:text-base md:text-lg lg:text-base xl:text-xl leading-none text-end lg:text-start uppercase"
-              >
-                Welcome to my portfolio
-              </motion.div>
-              <div className="w-[65%] md:w-[70%] lgl:w-[65%] xl:w-[70%] flex flex-col gap-2">
+            <motion.div
+              variants={textVariants}
+              className="text-xs sml:text-base md:text-lg lg:text-base xl:text-xl leading-none text-start uppercase text-textColo1"
+            >
+              Welcome to my portfolio
+            </motion.div>
+            <div className="w-full flex flex-col text-textColo1">
+              <div className="flex flex-col gap-2">
                 <motion.h1
                   variants={textVariants}
-                  className="font-titleFont font-bold text-2xl sml:text-4xl md:text-5xl mdl:text-6xl lg:text-4xl xl:text-6xl leading-none lg:text-end text-titleColor1"
+                  className="font-titleFont font-bold text-2xl sml:text-4xl md:text-5xl mdl:text-6xl lg:text-4xl xl:text-6xl leading-none text-titleColor1"
                 >
                   Hi, I am{" "}
                 </motion.h1>
-                <p className="uppercase text-accentColor1 font-titleFont font-bold text-2xl sml:text-4xl md:text-5xl mdl:text-6xl lg:text-4xl xl:text-6xl leading-none lg:text-end">
+                <p className="uppercase text-accentColor1 font-titleFont font-bold text-4xl sml:text-4xl md:text-5xl mdl:text-6xl lg:text-4xl xl:text-6xl leading-none tracking-wide text-nowrap">
                   Shaed Noor
                 </p>
               </div>
@@ -115,7 +115,7 @@ export default function Hero() {
             <div className="w-full flex flex-row-reverse">
               <motion.div
                 variants={textVariants}
-                className="w-full xl:w-[85%] text-sm md:text-base text-center md:text-end text-textColo1"
+                className="w-full text-sm md:text-base text-textColo1"
               >
                 Dynamic, motivated, hardworking, keen about the changes in the
                 dynamic world of computer science technology. I want to export
@@ -123,15 +123,14 @@ export default function Hero() {
                 required by an organization to achieve the target & develop the
                 best performance.
               </motion.div>
-              <div className="w-0 xl:w-[15%]"></div>
             </div>
-            <div className="w-full flex flex-row">
+            <div className="w-full flex flex-row gap-10">
               <motion.div
                 variants={textVariants}
-                className="w-[50%] flex justify-center items-center"
+                className=" flex justify-center items-center"
               >
                 <a
-                  className="flex flex-row gap-1 justify-center items-center px-5 py-[9px] text-titleColor1 rounded bg-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base"
+                  className="flex flex-row px-5 gap-1 justify-center items-center py-[9px] text-titleColor1 rounded bg-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base"
                   href={resume}
                   download="Resume of SYED SHAEDUZZAMAN NOOR.pdf"
                 >
@@ -143,7 +142,7 @@ export default function Hero() {
               </motion.div>
               <motion.div
                 variants={textVariants}
-                className="w-[50%] flex justify-center items-center"
+                className=" flex justify-center items-center"
               >
                 <Link
                   className="flex flex-row gap-1 justify-center items-center px-5 py-2 text-primaryColor1 rounded border border-primaryColor1 hover:scale-[1.1] cursor-pointer duration-[400ms] text-[10px] sml:text-xs md:text-base"

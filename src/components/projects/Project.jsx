@@ -20,19 +20,16 @@ export default function Project() {
               </p>
             </div>
             <div className="flex flex-col-reverse gap-5 lgl:gap-0 lgl:flex-row-reverse justify-between items-center">
-              <div className="w-full lgl:w-[60%] text-sm md:text-base text-end text-textColo2">
+              <div className="w-full lgl:w-[45%] text-sm md:text-base text-end text-textColo2">
                 Welcome to my project portfolio, where creativity meets
                 functionality. Here, you will find a curated selection of my
                 most significant works, showcasing my expertise in front-end and
                 back-end development with UI/UX design, Machine Learning,
                 software manual or automation testing, and more. Each project
                 reflects my commitment to quality, innovation, and meticulous
-                attention to detail. From dynamic websites and testing apps to
-                data-driven machine learning models, these projects demonstrate
-                my ability to tackle diverse challenges and deliver exceptional
-                results. Dive in to explore the breadth and depth of my work.
+                attention to detail.
               </div>
-              <p className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start text-titleColor2 leading-none">
+              <p className="w-full lgl:w-[50%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-start text-titleColor2 leading-none">
                 My Development{" "}
                 <span className="font-handFont ps-2 lowercase text-5xl sml:text-7xl md:text-8xl font-normal text-[#07BEB8]">
                   _journey

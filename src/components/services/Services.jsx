@@ -16,18 +16,14 @@ export default function Services() {
             </p>
           </div>
           <div className="flex flex-col-reverse gap-5 lgl:gap-0 lgl:flex-row justify-between items-center">
-            <div className="w-full lgl:w-[60%] text-sm md:text-base text-textColo2">
+            <div className="w-full lgl:w-[45%] text-sm md:text-base text-textColo2">
               I provide a diverse range of professional services designed to
               meet your unique needs. From cutting-edge full-stack web
               development and intuitive UI/UX design to advanced Machine
               Learning solutions and effective digital marketing strategies, I
-              am dedicated to delivering quality and innovation. Whether you
-              need a robust mobile application or expert consulting to guide
-              your business, my goal is to help you succeed and thrive in
-              today&apos;s competitive landscape. Let&apos;s work together to
-              bring your vision to life.
+              am dedicated to delivering quality and innovation.
             </div>
-            <p className="w-full lgl:w-[35%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end text-titleColor2">
+            <p className="w-full lgl:w-[50%] text-3xl sml:text-5xl md:text-6xl lg:text-5xl xl:text-6xl uppercase font-bold text-end text-titleColor2">
               Quality Service{" "}
               <span className="font-handFont ps-2 lowercase text-5xl sml:text-7xl md:text-8xl font-normal text-primaryColor2">
                 _delivery
