@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 export default function Services() {
   return (
     <div id="services">
-      <div className="w-full px-5 py-10 md:px-10 lg:px-20 lg:py-20 overflow-hidden flex flex-col gap-5 lg:gap-10 bg-darkBG3">
+      <div className="w-full px-3 py-10 md:px-10 lg:px-20 lg:py-20 overflow-hidden flex flex-col gap-5 lg:gap-10 bg-darkBG3">
         <div className="w-full flex flex-col gap-5 lgl:gap-10">
           <div>
             <p className="uppercase font-titleFont text-xs md:text-base text-start text-accentColor1">
@@ -33,7 +33,7 @@ export default function Services() {
         </div>
         <div className="flex flex-row justify-between">
           <div className="w-full">
-            <div className="w-full h-full grid grid-cols-2 lg:grid-cols-3 gap-3 sml:gap-5 xl:gap-10">
+            <div className="w-full h-full grid grid-cols-2 lg:grid-cols-3 gap-2 sml:gap-5 xl:gap-10">
               <ServiceCard
                 icon=<FaCode />
                 title="App Development"

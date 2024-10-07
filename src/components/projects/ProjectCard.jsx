@@ -6,15 +6,15 @@ import { Link } from "react-router-dom";
 export default function ProjectCard(props) {
   return (
     <div className="w-full flex relative justify-center items-center rounded overflow-hidden group cursor-pointer shadow-xl">
-      <div className="w-full h-auto">
+      <div className="w-full aspect-square">
         <img
           src={props.coverImg}
           alt=""
-          className="w-full group-hover:blur-[3px] duration-[600ms] object-cover"
+          className="w-full h-full group-hover:blur-[3px] duration-[600ms] object-cover"
         />
       </div>
       <div className="w-full h-full absolute bg-gradient-to-br from-primaryColor1/90 to-accentColor1/90 p-2 md:p-4 mdl:p-5 z-[2] translate-y-[100%] group-hover:translate-y-0 duration-[600ms] flex flex-col gap-1 sml:gap-3 xl:gap-5 items-center justify-between">
-        <p className="text-white text-[8px] sml:text-[10px] md:text-[13px] mdl:text-base">
+        <p className="text-white text-xs sml:text-[14px] md:text-[16px] mdl:text-sm xl:text-xl">
           {props.desc}
         </p>
         <div className="w-full flex flex-row justify-between items-center">

@@ -5,13 +5,14 @@ import hungryShaed from "../../assets/images/projects_images/hungry_shaed.webp";
 import movieSuggest from "../../assets/images/projects_images/movie_sugges_sys.webp";
 import personalPortfolio from "../../assets/images/projects_images/personal_portfolio.webp";
 import carPricePred from "../../assets/images/projects_images/preowned_car_price_pred.webp";
+import sportswearWeb from "../../assets/images/projects_images/sportswear_web.webp";
 import pluginsTesting from "../../assets/images/projects_images/wordpress_plugins_testing.webp";
 import ProjectCard from "./ProjectCard";
 
 export default function Project() {
   return (
     <div id="projects">
-      <div className="bg-darkBG3 w-full pt-10 px-5 pb-10 md:px-10 lg:px-20 lg:pb-20 overflow-hidden flex flex-col gap-5 lg:gap-10">
+      <div className="bg-darkBG3 w-full pt-10 px-3 pb-10 md:px-10 lg:px-20 lg:pb-20 overflow-hidden flex flex-col gap-5 lg:gap-10">
         <div>
           <div className="w-full flex flex-col gap-5 lg:gap-10">
             <div>
@@ -38,7 +39,13 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <div className="w-full grid grid-cols-2 xl:grid-cols-3 gap-3 md:gap-5 justify-center items-center">
+        <div className="w-full grid grid-cols-2 lgl:grid-cols-3 gap-3 md:gap-5 justify-center items-center">
+          <ProjectCard
+            coverImg={sportswearWeb}
+            desc="Developed a house price prediction model using machine learning algorithms. Built a user-friendly website with React.js and FastAPI for the backend, ensuring efficient data processing and accurate predictions."
+            detailsLink="/house-price-prediction-project"
+            githubLink="https://github.com/syednoor058/Machine_Learning_Real_Estate_Price_Prediction"
+          />
           <ProjectCard
             coverImg={housePred}
             desc="Developed a house price prediction model using machine learning algorithms. Built a user-friendly website with React.js and FastAPI for the backend, ensuring efficient data processing and accurate predictions."
