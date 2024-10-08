@@ -33,7 +33,7 @@ export default function Services() {
         </div>
         <div className="flex flex-row justify-between">
           <div className="w-full">
-            <div className="w-full h-full grid grid-cols-2 lg:grid-cols-3 gap-2 sml:gap-5 xl:gap-10">
+            <div className="w-full h-full grid grid-cols-2 lg:grid-cols-3 gap-3 sml:gap-3 md:gap-5 xl:gap-10">
               <ServiceCard
                 icon=<FaCode />
                 title="App Development"
